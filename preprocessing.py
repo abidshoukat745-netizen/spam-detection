@@ -9,7 +9,7 @@ print(df.head(5))
 print(df.info())
 print(df.columns)
 
-df = df.drop(['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'], axis=1, )
+df = df.drop(columns=[col for col in df.columns if 'Unnamed' in col])
 print(df.columns)
 
 df = df.rename(columns={'v1': 'label', 'v2': 'text'})
