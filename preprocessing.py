@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # read the data
-df = pd.read_csv(r'C:\Users\Mehar\Downloads\spam-data.csv', encoding='latin-1')
+df = pd.read_csv('cleaned_data.csv', encoding='latin-1')
 
 print(df.head(5))
 
